@@ -21,7 +21,7 @@ class FriendsDetailViewController: BaseViewController {
         super.viewDidLoad()
         
         title = "详情"
-        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 14),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 16),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
         view.addSubview(tableView)
         view.addSubview(bottomView)
         bottomView.snp.makeConstraints { (make) in

@@ -172,12 +172,12 @@ class DetailTableViewCell: UITableViewCell {
     }()
     //
     private lazy var referNamelbl:UILabel = {
-        let lbl = UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0),screenInset: 10)
+        let lbl = UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0),screenInset: 10)
         return lbl
     }()
     //
     private lazy var referText:UILabel = {
-        let lbl =  UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 0)
+        let lbl =  UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 0)
         lbl.textAlignment = .left
         return lbl
     }()
@@ -189,13 +189,13 @@ class DetailTableViewCell: UITableViewCell {
     }()
     //昵称
     private lazy var namelbl:UILabel = {
-        let lbl = UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0),screenInset: 10)
+        let lbl = UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0),screenInset: 10)
         return lbl
     }()
     
     //正文
     fileprivate lazy var contentlbl:UILabel = {
-        let lbl =  UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
+        let lbl =  UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
         lbl.textAlignment = .left
         return lbl
     }()

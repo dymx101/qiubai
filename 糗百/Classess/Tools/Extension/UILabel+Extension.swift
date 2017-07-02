@@ -29,8 +29,9 @@ extension UILabel {
          
             text = title
             textColor = color
-            font = UIFont.systemFont(ofSize: fontSize)
-            
+            font = UIFont(name: "HelveticaNeue-Light", size: fontSize)
+//            font = UIFont.systemFont(ofSize: fontSize)
+        
             numberOfLines = 0
            
             if screenInset == 0 {

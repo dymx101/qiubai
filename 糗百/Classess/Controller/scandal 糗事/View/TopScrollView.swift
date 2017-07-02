@@ -58,17 +58,17 @@ class TopScrollView: UIView {
         super.init(frame: frame)
         
         addSubview(scrollView)
-        addSubview(leftBtn)
-        addSubview(rightBtn)
+//        addSubview(leftBtn)
+//        addSubview(rightBtn)
         addSubview(bottomView)
-        leftBtn.snp.makeConstraints { (make) in
-            make.left.bottom.top.equalTo(self)
-            make.width.equalTo(40)
-        }
-        rightBtn.snp.makeConstraints { (make) in
-            make.right.bottom.top.equalTo(self)
-            make.width.equalTo(40)
-        }
+//        leftBtn.snp.makeConstraints { (make) in
+//            make.left.bottom.top.equalTo(self)
+//            make.width.equalTo(40)
+//        }
+//        rightBtn.snp.makeConstraints { (make) in
+//            make.right.bottom.top.equalTo(self)
+//            make.width.equalTo(40)
+//        }
         
        
     }

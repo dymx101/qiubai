@@ -23,7 +23,7 @@ class DeatailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "糗事\(id)"
-        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 14),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
+        navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 16),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
         
         loadCommentData()
         

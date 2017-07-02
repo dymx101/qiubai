@@ -34,7 +34,8 @@
             lovelbl.snp.remakeConstraints({ (make) in
                 make.top.equalTo(pictureView.snp.bottom).offset(10)
                 make.left.equalTo(pictureView.snp.left)
-            })    }
+            })
+        }
 //        override func rowHeight(data:HomeData) -> CGFloat {
 //            //Homedata = data
 //            Homedata(Homedata: data, index: nil)

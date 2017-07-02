@@ -91,12 +91,12 @@ class PhotoBrowserViewController: UIViewController {
     // MARK: - 懒加载控件
     lazy var collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: PhotoBrowserViewLayout())
     /// 关闭按钮
-     lazy var closeButton: UIButton = UIButton(title: "关闭", fontSize: 14, color: UIColor.white, imageName: nil, backColor: UIColor.darkGray)
+     lazy var closeButton: UIButton = UIButton(title: "关闭", fontSize: 16, color: UIColor.white, imageName: nil, backColor: UIColor.darkGray)
     /// 保存按钮
-     lazy var saveButton: UIButton = UIButton(title: "保存", fontSize: 14, color: UIColor.white, imageName: nil, backColor: UIColor.darkGray)
+     lazy var saveButton: UIButton = UIButton(title: "保存", fontSize: 16, color: UIColor.white, imageName: nil, backColor: UIColor.darkGray)
     /// 保存按钮
     lazy var rowLabel: UILabel = {
-      let lbl = UILabel.init(title: "", fontSize: 14, color: WHITE_COLOR, screenInset: 0)
+      let lbl = UILabel.init(title: "", fontSize: 16, color: WHITE_COLOR, screenInset: 0)
         return lbl
     }()
     // MARK: - 自定义流水布局

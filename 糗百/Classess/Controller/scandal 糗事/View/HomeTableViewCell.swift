@@ -35,84 +35,85 @@ class HomeTableViewCell: UITableViewCell {
     func Detaildata(data:Article?,isView:Bool?) {
         self.Detaildata = data
         
-        if data?.user != nil {
-            
-            let iconString = "\(data!.user!.id)" as NSString
-            
-            iconView.sd_setImage(with:  URL.init(string: "http://pic.qiushibaike.com/system/avtnew/\(iconString.substring(to: 4))/\(data!.user!.id)/medium/\(data!.user!.icon!)"), placeholderImage: UIImage.init(named: "default_avatar"), options: [.retryFailed,.refreshCached], completed: {[weak self] (image, error, type, url) in
-                self?.iconView.addCorner(radius: 20)
-            })
-            
-            namelbl.text = data!.user!.login!
-        }else {
-            
-            iconView.image = UIImage.init(named: "default_avatar")
-            namelbl.text = "匿名用户"
-        }
-        
-        typelbl.text = data!.type
+//        if data?.user != nil {
+//            
+//            let iconString = "\(data!.user!.id)" as NSString
+//            
+//            iconView.sd_setImage(with:  URL.init(string: "http://pic.qiushibaike.com/system/avtnew/\(iconString.substring(to: 4))/\(data!.user!.id)/medium/\(data!.user!.icon!)"), placeholderImage: UIImage.init(named: "default_avatar"), options: [.retryFailed,.refreshCached], completed: {[weak self] (image, error, type, url) in
+//                self?.iconView.addCorner(radius: 20)
+//            })
+//            
+//            namelbl.text = data!.user!.login!
+//        }else {
+//            
+//            iconView.image = UIImage.init(named: "default_avatar")
+//            namelbl.text = "匿名用户"
+//        }
+//        
+//        typelbl.text = data!.type
         
         contentlbl.text = data!.content
-        lovelbl.text = "好笑 " + "\(data!.votes!.up)" + "  ·  评论 " + "\(data!.comments_count)" + "  ·  分享 " + "\(data!.share_count)"
+//        lovelbl.text = "好笑 " + "\(data!.votes!.up)" + "  ·  评论 " + "\(data!.comments_count)" + "  ·  分享 " + "\(data!.share_count)"
         
-        grayView.snp.updateConstraints { (make) in
-            make.top.equalTo(hotlbl.snp.bottom).offset(-10)
-            if isView! {
-                
-                make.height.equalTo(1)
-            }else {
-                make.height.equalTo(0)
-                
-            }
-        }
+//        grayView.snp.updateConstraints { (make) in
+//            make.top.equalTo(hotlbl.snp.bottom).offset(-10)
+//            if isView! {
+//                
+//                make.height.equalTo(1)
+//            }else {
+//                make.height.equalTo(0)
+//                
+//            }
+//        }
         
     }
+    
     func Homedata(Homedata:HomeData?,index:IndexPath?) {
         
         self.index = index
         self.Homedata = Homedata
-        if Homedata?.user != nil {
-            
-            let iconString = "\(Homedata!.user!.id)" as NSString
-            
-            iconView.sd_setImage(with:  URL.init(string: "http://pic.qiushibaike.com/system/avtnew/\(iconString.substring(to: 4))/\(Homedata!.user!.id)/medium/\(Homedata!.user!.icon!)"), placeholderImage: UIImage.init(named: "default_avatar"), options: [.retryFailed,.refreshCached], completed: {[weak self] (image, error, type, url) in
-                self?.iconView.addCorner(radius: 20)
-            })
-            
-            namelbl.text = Homedata!.user!.login!
-        }else {
-            
-            iconView.image = UIImage.init(named: "default_avatar")
-            namelbl.text = "匿名用户"
-        }
-        
-        typelbl.text = Homedata!.type
+//        if Homedata?.user != nil {
+//            
+//            let iconString = "\(Homedata!.user!.id)" as NSString
+//            
+////            iconView.sd_setImage(with:  URL.init(string: "http://pic.qiushibaike.com/system/avtnew/\(iconString.substring(to: 4))/\(Homedata!.user!.id)/medium/\(Homedata!.user!.icon!)"), placeholderImage: UIImage.init(named: "default_avatar"), options: [.retryFailed,.refreshCached], completed: {[weak self] (image, error, type, url) in
+////                self?.iconView.addCorner(radius: 20)
+////            })
+////            
+////            namelbl.text = Homedata!.user!.login!
+//        }else {
+//            
+//            iconView.image = UIImage.init(named: "default_avatar")
+//            namelbl.text = "匿名用户"
+//        }
+//        
+//        typelbl.text = Homedata!.type
         contentlbl.text = Homedata!.content
-        lovelbl.text = "好笑 " + "\(Homedata!.votes!.up)" + "  ·  评论 " + "\(Homedata!.comments_count)" + "  ·  分享 " + "\(Homedata!.share_count)"
+//        lovelbl.text = "好笑 " + "\(Homedata!.votes!.up)" + "  ·  评论 " + "\(Homedata!.comments_count)" + "  ·  分享 " + "\(Homedata!.share_count)"
         
         
-        if ((Homedata?.hot_comment) != nil) {
-            hotlbl.isHidden = false
-            hotlbl.text = (Homedata?.hot_comment?.user?.login)! + "：" + (Homedata?.hot_comment?.content)!
-            grayView.snp.remakeConstraints({ (make) in
-                
-                make.top.equalTo(hotlbl.snp.bottom).offset(10)
-                make.left.equalTo(contentView.snp.left)
-                make.width.equalTo(SCREEN_WIDTH)
-                make.height.equalTo(10)
-            })
-            hotlbl.attributedText = hotlbl.text!.SubStringColor(subString: (Homedata?.hot_comment?.user?.login!)!, color: RGB(r: 85, g: 85, b: 106, a: 1.0), font: Font(fontSize: 12))
-        }else {
-            hotlbl.isHidden = true
-            grayView.snp.remakeConstraints({ (make) in
-                make.top.equalTo(loveBtn.snp.bottom).offset(10)
-                make.left.equalTo(contentView.snp.left)
-                make.width.equalTo(SCREEN_WIDTH)
-                make.height.equalTo(10)
-                
-            })
-            
-        }
+//        if ((Homedata?.hot_comment) != nil) {
+//            hotlbl.isHidden = false
+//            hotlbl.text = (Homedata?.hot_comment?.user?.login)! + "：" + (Homedata?.hot_comment?.content)!
+//            grayView.snp.remakeConstraints({ (make) in
+//                
+//                make.top.equalTo(hotlbl.snp.bottom).offset(10)
+//                make.left.equalTo(contentView.snp.left)
+//                make.width.equalTo(SCREEN_WIDTH)
+//                make.height.equalTo(10)
+//            })
+//            hotlbl.attributedText = hotlbl.text!.SubStringColor(subString: (Homedata?.hot_comment?.user?.login!)!, color: RGB(r: 85, g: 85, b: 106, a: 1.0), font: Font(fontSize: 12))
+//        }else {
+//            hotlbl.isHidden = true
+//            grayView.snp.remakeConstraints({ (make) in
+//                make.top.equalTo(loveBtn.snp.bottom).offset(10)
+//                make.left.equalTo(contentView.snp.left)
+//                make.width.equalTo(SCREEN_WIDTH)
+//                make.height.equalTo(10)
+//                
+//            })
+//            
+//        }
         
     }
     
@@ -145,20 +146,23 @@ class HomeTableViewCell: UITableViewCell {
     // MARK: - action
     
     func long(long:UILongPressGestureRecognizer)  {
-        if long.state == .began {
-            del?.shareClcik(text: Homedata?.content, img: nil,id: Homedata?.id)
-        }
+//        if long.state == .began {
+//            del?.shareClcik(text: Homedata?.content, img: nil,id: Homedata?.id)
+//        }
+        
+        UIPasteboard.general.string = Homedata?.content
+
     }
     func  topClick(tap:UITapGestureRecognizer) {
-        if Homedata?.user != nil {
-            
-            del?.topViewClick(uid: (Homedata?.user?.uid)!)
-        }
+//        if Homedata?.user != nil {
+//            
+//            del?.topViewClick(uid: (Homedata?.user?.uid)!)
+//        }
         
     }
     func btnClick(sender:UIButton) {
-        currentBtn.isSelected = false
-        currentBtn = sender
+//        currentBtn.isSelected = false
+//        currentBtn = sender
         sender.isSelected = true
         del?.bottomBtnViewClick(sender: sender,index: self.index)
     }
@@ -172,30 +176,37 @@ class HomeTableViewCell: UITableViewCell {
         let view = UIView.init()
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(HomeTableViewCell.topClick(tap:)))
         view.addGestureRecognizer(tap)
-        view.backgroundColor = WHITE_COLOR
+        view.backgroundColor = UIColor(white:0.95, alpha:1)
         return view
     }()
+    
+    lazy var colorBgView: UIView = {
+        let view = UIView()
+        view.alpha = 0.1
+        return view
+    }()
+    
     //头像
     private lazy var iconView:UIImageView = {
         let img = UIImageView.init()
         
         return img
     }()
-    //昵称
-    private lazy var namelbl:UILabel = {
-        let lbl =  UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
-        lbl.backgroundColor = CLEAR_COLOR
-        return lbl
-    }()
-    //状态
-    private lazy var typelbl:UILabel = {
-        let lbl =  UILabel.init(title: "", fontSize: 14, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
-        lbl.backgroundColor = CLEAR_COLOR
-        return lbl
-    }()
+//    //昵称
+//    private lazy var namelbl:UILabel = {
+//        let lbl =  UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
+//        lbl.backgroundColor = CLEAR_COLOR
+//        return lbl
+//    }()
+//    //状态
+//    private lazy var typelbl:UILabel = {
+//        let lbl =  UILabel.init(title: "", fontSize: 16, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
+//        lbl.backgroundColor = CLEAR_COLOR
+//        return lbl
+//    }()
     //正文
     lazy var contentlbl:UILabel = {
-        let lbl =  UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
+        let lbl =  UILabel.init(title: "", fontSize: 18, color: RGB(r: 9, g: 9, b: 9, a: 1.0), screenInset: 10)
         return lbl
     }()
     //图片
@@ -208,40 +219,40 @@ class HomeTableViewCell: UITableViewCell {
     //好笑 //评论
     lazy var lovelbl:UILabel = {
         //
-        let lbl = UILabel.init(title: "昵称", fontSize: 14, color:  RGB(r: 212, g: 212, b: 215, a: 1.0), screenInset: 10)
+        let lbl = UILabel.init(title: "", fontSize: 16, color:  RGB(r: 212, g: 212, b: 215, a: 1.0), screenInset: 10)
         return lbl
     }()
-    private lazy var currentBtn:UIButton = {
-        let btn = UIButton.init()
-        return btn
-    }()
-    lazy var loveBtn:UIButton = {
-        let btn = UIButton.init(imageName: "icon_for", backImageName: nil, SelectedImageName: "icon_for_active", target: self, actionName: #selector(self.btnClick(sender:)))
-        btn.tag = 0
-        return btn
-    }()
-    lazy var againstBtn:UIButton = {
-        
-        let btn = UIButton.init(imageName: "icon_against", backImageName: nil, SelectedImageName: "icon_against_active", target: self, actionName: #selector(self.btnClick(sender:)))
-        btn.tag = 1
-        return btn
-    }()
-    lazy var commentBtn:UIButton = {
-        let btn = UIButton.init(imageName: "icon_chat", backImageName: nil, SelectedImageName: nil, target: self, actionName:  #selector(self.btnClick(sender:)))
-        btn.tag = 2
-        return btn
-    }()
-    lazy var shareBtn:UIButton = {
-        let btn = UIButton.init(imageName: "icon_fav", backImageName: nil, SelectedImageName: nil, target: self, actionName:  #selector(self.btnClick(sender:)))
-        btn.tag = 3
-        return btn
-    }()
-    //热门评论
-    lazy var hotlbl:UILabel = {
-        let lbl = UILabel.init(title: "昵称", fontSize: 12, color:  RGB(r: 212, g: 212, b: 215, a: 1.0), screenInset: 10)
-        lbl.isHidden = true
-        return lbl
-    }()
+//    private lazy var currentBtn:UIButton = {
+//        let btn = UIButton.init()
+//        return btn
+//    }()
+//    lazy var loveBtn:UIButton = {
+//        let btn = UIButton.init(imageName: "icon_for", backImageName: nil, SelectedImageName: "icon_for_active", target: self, actionName: #selector(self.btnClick(sender:)))
+//        btn.tag = 0
+//        return btn
+//    }()
+//    lazy var againstBtn:UIButton = {
+//        
+//        let btn = UIButton.init(imageName: "icon_against", backImageName: nil, SelectedImageName: "icon_against_active", target: self, actionName: #selector(self.btnClick(sender:)))
+//        btn.tag = 1
+//        return btn
+//    }()
+//    lazy var commentBtn:UIButton = {
+//        let btn = UIButton.init(imageName: "icon_chat", backImageName: nil, SelectedImageName: nil, target: self, actionName:  #selector(self.btnClick(sender:)))
+//        btn.tag = 2
+//        return btn
+//    }()
+//    lazy var shareBtn:UIButton = {
+//        let btn = UIButton.init(imageName: "icon_fav", backImageName: nil, SelectedImageName: nil, target: self, actionName:  #selector(self.btnClick(sender:)))
+//        btn.tag = 3
+//        return btn
+//    }()
+//    //热门评论
+//    lazy var hotlbl:UILabel = {
+//        let lbl = UILabel.init(title: "昵称", fontSize: 12, color:  RGB(r: 212, g: 212, b: 215, a: 1.0), screenInset: 10)
+//        lbl.isHidden = true
+//        return lbl
+//    }()
     //分割线
     lazy var grayView:UIView = {
         let view = UIView.init()
@@ -253,37 +264,43 @@ class HomeTableViewCell: UITableViewCell {
     func setUI() {
         contentView.addSubview(topView)
         topView.addSubview(iconView)
-        topView.addSubview(namelbl)
-        topView.addSubview(typelbl)
+//        topView.addSubview(namelbl)
+//        topView.addSubview(typelbl)
+        contentView.addSubview(colorBgView)
         contentView.addSubview(contentlbl)
         
         contentView.addSubview(lovelbl)
-        contentView.addSubview(loveBtn)
-        contentView.addSubview(againstBtn)
-        contentView.addSubview(commentBtn)
-        contentView.addSubview(shareBtn)
-        contentView.addSubview(hotlbl)
+//        contentView.addSubview(loveBtn)
+//        contentView.addSubview(againstBtn)
+//        contentView.addSubview(commentBtn)
+//        contentView.addSubview(shareBtn)
+//        contentView.addSubview(hotlbl)
         contentView.addSubview(grayView)
         
         contentView.addSubview(pictureView)
         topView .snp.makeConstraints { (make) in
             make.top.left.right.equalTo(contentView)
-            make.height.equalTo(60)
+            make.height.equalTo(1)
         }
         iconView .snp.makeConstraints { (make) in
             make.top.left.equalTo(contentView).offset(10)
-            make.width.height.equalTo(40)
+            make.width.height.equalTo(1)
         }
-        namelbl .snp.makeConstraints { (make) in
-            
-            make.left.equalTo(iconView.snp.right).offset(10)
-            
-            make.centerY.equalTo(iconView.snp.centerY)
+//        namelbl .snp.makeConstraints { (make) in
+//            
+//            make.left.equalTo(iconView.snp.right).offset(10)
+//            
+//            make.centerY.equalTo(iconView.snp.centerY)
+//        }
+//        typelbl .snp.makeConstraints { (make) in
+//            make.top.equalTo(namelbl.snp.top)
+//            make.right.equalTo(contentView.snp.right).offset(-10)
+//        }
+        
+        colorBgView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
         }
-        typelbl .snp.makeConstraints { (make) in
-            make.top.equalTo(namelbl.snp.top)
-            make.right.equalTo(contentView.snp.right).offset(-10)
-        }
+        
         contentlbl .snp.makeConstraints { (make) in
             make.top.equalTo(iconView.snp.bottom).offset(10)
             make.left.equalTo(iconView.snp.left)
@@ -294,36 +311,36 @@ class HomeTableViewCell: UITableViewCell {
             make.left.equalTo(iconView.snp.left)
             
         }
-        loveBtn .snp.makeConstraints { (make) in
-            make.top.equalTo(lovelbl.snp.bottom).offset(10)
-            make.left.equalTo(iconView.snp.left)
-            make.width.equalTo(60)
-        }
-        againstBtn .snp.makeConstraints { (make) in
-            make.top.equalTo(lovelbl.snp.bottom).offset(10)
-            make.left.equalTo(loveBtn.snp.right)
-            make.width.equalTo(60)
-            make.bottom.equalTo(loveBtn.snp.bottom)
-        }
-        commentBtn .snp.makeConstraints { (make) in
-            make.top.equalTo(lovelbl.snp.bottom).offset(10)
-            make.left.equalTo(againstBtn.snp.right)
-            make.width.equalTo(60)
-            make.bottom.equalTo(loveBtn.snp.bottom)
-        }
-        shareBtn .snp.makeConstraints { (make) in
-            make.top.equalTo(lovelbl.snp.bottom).offset(10)
-            make.right.equalTo(contentView.snp.right)
-            make.width.equalTo(60)
-            make.bottom.equalTo(loveBtn.snp.bottom)
-        }
-        hotlbl .snp.makeConstraints { (make) in
-            make.top.equalTo(loveBtn.snp.bottom).offset(10)
-            make.left.equalTo(iconView.snp.left)
-            
-        }
+//        loveBtn .snp.makeConstraints { (make) in
+//            make.top.equalTo(lovelbl.snp.bottom).offset(10)
+//            make.left.equalTo(iconView.snp.left)
+//            make.width.equalTo(60)
+//        }
+//        againstBtn .snp.makeConstraints { (make) in
+//            make.top.equalTo(lovelbl.snp.bottom).offset(10)
+//            make.left.equalTo(loveBtn.snp.right)
+//            make.width.equalTo(60)
+//            make.bottom.equalTo(loveBtn.snp.bottom)
+//        }
+//        commentBtn .snp.makeConstraints { (make) in
+//            make.top.equalTo(lovelbl.snp.bottom).offset(10)
+//            make.left.equalTo(againstBtn.snp.right)
+//            make.width.equalTo(60)
+//            make.bottom.equalTo(loveBtn.snp.bottom)
+//        }
+//        shareBtn .snp.makeConstraints { (make) in
+//            make.top.equalTo(lovelbl.snp.bottom).offset(10)
+//            make.right.equalTo(contentView.snp.right)
+//            make.width.equalTo(60)
+//            make.bottom.equalTo(loveBtn.snp.bottom)
+//        }
+//        hotlbl .snp.makeConstraints { (make) in
+//            make.top.equalTo(loveBtn.snp.bottom).offset(10)
+//            make.left.equalTo(iconView.snp.left)
+//            
+//        }
         grayView .snp.makeConstraints { (make) in
-            make.top.equalTo(hotlbl.snp.bottom).offset(10)
+            make.top.equalTo(lovelbl.snp.bottom).offset(10)
             make.left.equalTo(contentView.snp.left)
             make.width.equalTo(SCREEN_WIDTH)
             make.height.equalTo(10)
@@ -393,5 +410,17 @@ extension HomeTableViewCell: PhotoBrowserPresentDelegate {
         let rect = CGRect(x: 0, y: y, width: w, height: h)
         
         return rect
+    }
+}
+
+extension HomeTableViewCell {
+    func changeBgColor() {
+        let randomColor = UIColor(red: randomColorValue(), green: randomColorValue(), blue: randomColorValue(), alpha: 1)
+        colorBgView.backgroundColor = randomColor
+    }
+    
+    func randomColorValue() -> CGFloat {
+        let random = arc4random() % 128
+        return CGFloat((128.0 + Double(random)) / 255.0)
     }
 }

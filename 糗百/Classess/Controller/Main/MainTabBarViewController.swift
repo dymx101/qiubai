@@ -54,9 +54,6 @@ class MainTabBarViewController: UITabBarController,UITabBarControllerDelegate {
         
     }
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if viewController == tabBarController.viewControllers?[3] {
-            return false
-        }
         return true
     }
     override func didReceiveMemoryWarning() {

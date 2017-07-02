@@ -83,7 +83,7 @@ class HomeTableViewController: UITableViewController,HomeCellDel {
         let data = dataArray[indexPath.row]
         
         let  cell = tableView.dequeueReusableCell(withIdentifier: data.cellId, for: indexPath) as! HomeTableViewCell
-        
+        cell.changeBgColor()
         
         cell.Homedata(Homedata: data, index: indexPath)
         cell.del = self
@@ -127,18 +127,18 @@ class HomeTableViewController: UITableViewController,HomeCellDel {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if name == "video" {
-            //            let controller = VideoTableViewController()
-            //            controller.hidesBottomBarWhenPushed = true
-            //           controller.data = dataArray[indexPath.row]
-            //            navigationController?.pushViewController(controller, animated: true)
-        }else {
-            
-            let controller = DeatailViewController()
-            controller.hidesBottomBarWhenPushed = true
-            controller.id = dataArray[indexPath.row].id
-            navigationController?.pushViewController(controller, animated: true)
-        }
+//        if name == "video" {
+//            //            let controller = VideoTableViewController()
+//            //            controller.hidesBottomBarWhenPushed = true
+//            //           controller.data = dataArray[indexPath.row]
+//            //            navigationController?.pushViewController(controller, animated: true)
+//        }else {
+//            
+//            let controller = DeatailViewController()
+//            controller.hidesBottomBarWhenPushed = true
+//            controller.id = dataArray[indexPath.row].id
+//            navigationController?.pushViewController(controller, animated: true)
+//        }
     }
     func bottomBtnViewClick(sender: UIButton,index:IndexPath?) {
         switch sender.tag {

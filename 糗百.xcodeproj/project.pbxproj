@@ -249,9 +249,9 @@
 		582AFC051D98C936006D9ECB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		582AFC071D98C936006D9ECB /* TopScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScrollView.swift; sourceTree = "<group>"; };
 		582AFC131D98FA66006D9ECB /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		582AFC171D991FCB006D9ECB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		582AFC171D991FCB006D9ECB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HomeTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		582AFC1E1D9A565F006D9ECB /* HomeImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeImageTableViewCell.swift; sourceTree = "<group>"; };
-		582AFC231D9A64F1006D9ECB /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		582AFC231D9A64F1006D9ECB /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DetailTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		582AFC2E1D9D29ED006D9ECB /* qb_s_00@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qb_s_00@3x.png"; sourceTree = "<group>"; };
 		582AFC2F1D9D29ED006D9ECB /* qb_s_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qb_s_01@3x.png"; sourceTree = "<group>"; };
 		582AFC301D9D29ED006D9ECB /* qb_s_02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qb_s_02@3x.png"; sourceTree = "<group>"; };
@@ -308,7 +308,7 @@
 		582AFC631D9D29ED006D9ECB /* qb_s_53@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qb_s_53@3x.png"; sourceTree = "<group>"; };
 		582AFC641D9D29ED006D9ECB /* qb_s_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qb_s_delete@3x.png"; sourceTree = "<group>"; };
 		582AFCB21D9E0C3E006D9ECB /* BottomCommentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCommentView.swift; sourceTree = "<group>"; };
-		582AFCB41D9E0D54006D9ECB /* DeatailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeatailViewController.swift; sourceTree = "<group>"; };
+		582AFCB41D9E0D54006D9ECB /* DeatailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DeatailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		582AFCCC1D9E46AC006D9ECB /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		582AFCCD1D9E46AC006D9ECB /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
 		582AFCCE1D9E46AC006D9ECB /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 		582AFCD31D9E46AC006D9ECB /* String+Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Emoji.swift"; sourceTree = "<group>"; };
 		582AFCD41D9E46AC006D9ECB /* UITextView+Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Emoticon.swift"; sourceTree = "<group>"; };
 		582AFCDE1D9E6585006D9ECB /* HomeVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVideoTableViewCell.swift; sourceTree = "<group>"; };
-		5841B5531DF5507F007D59E1 /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsDetailViewController.swift; sourceTree = "<group>"; };
+		5841B5531DF5507F007D59E1 /* FriendsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FriendsDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5843E1401DE54AB3007F93D0 /* PunchesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PunchesView.swift; sourceTree = "<group>"; };
 		5843E1431DE6D024007F93D0 /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		5843E1451DE6E5F1007F93D0 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -332,8 +332,8 @@
 		5866C9FB1DDB14E300C57690 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		5866CA011DDC4C6500C57690 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		5866CA051DDC61B000C57690 /* FriendsVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsVideoCell.swift; sourceTree = "<group>"; };
-		5866CA071DDC673C00C57690 /* FriendsTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTopicCell.swift; sourceTree = "<group>"; };
-		5866CA171DDD9F1F00C57690 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		5866CA071DDC673C00C57690 /* FriendsTopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FriendsTopicCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5866CA171DDD9F1F00C57690 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		586BBCD41DF69E99001BA334 /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
 		586BBCD51DF69E99001BA334 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		586BBCD61DF69E99001BA334 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
@@ -378,8 +378,8 @@
 		58DCF9121DF150F1001A7786 /* CAKeyframeAnimation+shakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAKeyframeAnimation+shakeAnimation.h"; sourceTree = "<group>"; };
 		58DCF9131DF150F1001A7786 /* CAKeyframeAnimation+shakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+shakeAnimation.m"; sourceTree = "<group>"; };
 		58F0FA8D1DB8A23600152354 /* BMPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BMPlayer.framework; path = "../../Library/Developer/Xcode/DerivedData/糗百-fidodjvzpapfdhauhxalogvdibjy/Build/Products/Release-iphonesimulator/BMPlayer/BMPlayer.framework"; sourceTree = "<group>"; };
-		58F5E7E51DD1BDFE00516A65 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
-		58F5E7E81DD1C07800516A65 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		58F5E7E51DD1BDFE00516A65 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FriendsTableViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		58F5E7E81DD1C07800516A65 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FriendsTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		58F5E7FF1DD2D29500516A65 /* FriendsPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsPictureView.swift; sourceTree = "<group>"; };
 		58F5E8021DD2FED800516A65 /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
 		58F5E8031DD2FED800516A65 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
@@ -1223,7 +1223,7 @@
 				TargetAttributes = {
 					582AFB881D98BEF9006D9ECB = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NYG3WRTB5X;
+						DevelopmentTeam = 8MWQU2YKZK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1559,7 +1559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = NYG3WRTB5X;
+				DEVELOPMENT_TEAM = 8MWQU2YKZK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/糗百/Classess/Tools",
@@ -1613,7 +1613,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = NYG3WRTB5X;
+				DEVELOPMENT_TEAM = 8MWQU2YKZK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/糗百/Classess/Tools",

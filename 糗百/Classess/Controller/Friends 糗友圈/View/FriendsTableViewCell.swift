@@ -301,7 +301,7 @@ class FriendsTableViewCell: UITableViewCell,TTTAttributedLabelDelegate {
     //昵称
     private lazy var namelbl:UILabel = {
         //
-        let lbl = UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
+        let lbl = UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 10)
         
         
         return lbl
@@ -309,7 +309,7 @@ class FriendsTableViewCell: UITableViewCell,TTTAttributedLabelDelegate {
     //状态
     private lazy var sexlbl:UILabel = {
         
-        let lbl =  UILabel.init(title: "", fontSize: 14, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
+        let lbl =  UILabel.init(title: "", fontSize: 16, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
         return lbl
     }()
     //正文
@@ -317,7 +317,7 @@ class FriendsTableViewCell: UITableViewCell,TTTAttributedLabelDelegate {
         
         let lbl = TTTAttributedLabel.init(frame: .zero)
         lbl.textColor = RGB(r: 99, g: 99, b: 99, a: 1.0)
-        lbl.font = Font(fontSize: 14)
+        lbl.font = Font(fontSize: 16)
         lbl.delegate = self
         lbl.numberOfLines = 0
         return lbl

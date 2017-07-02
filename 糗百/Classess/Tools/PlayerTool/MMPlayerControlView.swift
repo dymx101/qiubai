@@ -451,7 +451,7 @@ class MMPlayerControlView: UIView,UIGestureRecognizerDelegate {
                 let btn = UIButton.init(type: .custom)
                 btn.tag = 200+i
                 resolutionView.addSubview(btn)
-                btn.titleLabel?.font = Font(fontSize: 14)
+                btn.titleLabel?.font = Font(fontSize: 16)
                 btn.frame = CGRect.init(x: 0, y: 30*i, width: 40, height: 30)
                 btn.setTitle(resolutionArray?[i], for: .normal)
                 btn.addTarget(self, action: #selector(MMPlayerControlView.changeResolution(sender:)), for: .touchUpInside)
@@ -637,7 +637,7 @@ class MMPlayerControlView: UIView,UIGestureRecognizerDelegate {
     /** 切换分辨率按钮 */
     private lazy var resolutionBtn:UIButton = {
         let view = UIButton.init(type: UIButtonType.custom)
-        view.titleLabel?.font = Font(fontSize: 14)
+        view.titleLabel?.font = Font(fontSize: 16)
         view.backgroundColor = UIColor.init(white:0, alpha: 0.7)
         
         view.addTarget(self, action: #selector(MMPlayerControlView.BtnClick(sender:)), for: .touchUpInside)

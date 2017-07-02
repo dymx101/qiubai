@@ -62,7 +62,7 @@ class FriendsTableViewController: UITableViewController,FriendsCellDel {
         if isFrineds {
             
             navigationController?.setNavigationBarHidden(false, animated: true)
-            navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 14),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
+            navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName:Font(fontSize: 16),NSForegroundColorAttributeName:RGB(r: 85, g: 85, b: 106, a: 1.0)]
         }
     }
     func noti(noti:NSNotification) {

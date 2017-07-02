@@ -23,7 +23,7 @@ class LoginTableViewController: UITableViewController {
         super.viewDidLoad()
         title = "登录/注册"
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "取消", style: .plain, target: self, action:#selector(LoginTableViewController.clickLeftBarButton))
-        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName:Font(fontSize: 14),NSForegroundColorAttributeName:mainColor], for: .normal)
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName:Font(fontSize: 16),NSForegroundColorAttributeName:mainColor], for: .normal)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         
         titles = [["使用微信账号","使用QQ账号","使用微博账号"],["邮箱/糗百昵称","密码"]]

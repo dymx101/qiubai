@@ -28,7 +28,7 @@ class FriendsTopicCell: UITableViewCell {
         
         
         typelbl.isHidden = !FriendsData!.is_anonymous
-        let width = (NSString.init(string: titlelbl.text!)).ew_width(with: Font(fontSize: 14), lineWidth: SCREEN_WIDTH)
+        let width = (NSString.init(string: titlelbl.text!)).ew_width(with: Font(fontSize: 16), lineWidth: SCREEN_WIDTH)
         
         titlelbl.snp.updateConstraints({ (make) in
             
@@ -146,7 +146,7 @@ class FriendsTopicCell: UITableViewCell {
     }()
     
     fileprivate lazy var titlelbl:UILabel = {
-        let lbl = UILabel.init(title: "昵称", fontSize: 14, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 0)
+        let lbl = UILabel.init(title: "昵称", fontSize: 16, color: RGB(r: 99, g: 99, b: 99, a: 1.0), screenInset: 0)
         lbl.numberOfLines = 1
         lbl.textAlignment = .left
         
@@ -168,12 +168,12 @@ class FriendsTopicCell: UITableViewCell {
     }()
     
     fileprivate lazy var rowlbl:UILabel = {
-        let lbl = UILabel.init(title: "标题", fontSize: 14, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
+        let lbl = UILabel.init(title: "标题", fontSize: 16, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
         return lbl
     }()
     
     fileprivate lazy var countlbl:UILabel = {
-        let lbl = UILabel.init(title: "标题", fontSize: 14, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
+        let lbl = UILabel.init(title: "标题", fontSize: 16, color: RGB(r: 163, g: 163, b: 155, a: 1.0), screenInset: 0)
         return lbl
     }()
     

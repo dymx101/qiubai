@@ -234,6 +234,11 @@ class HomeData:NSObject {
         //  }
     }
     override func setValue(_ value: Any?, forKey key: String) {
+        
+        guard let value = value else {
+            return
+        }
+        
         if key == "user" {
             
             if let dict = value as? [String: AnyObject] {

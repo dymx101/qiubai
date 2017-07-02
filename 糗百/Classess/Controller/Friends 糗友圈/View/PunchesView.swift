@@ -21,7 +21,7 @@ class PunchesView: UIView {
                 ddd.add(NSDate.ew_formatAbssTime(withInterval: punches![i])  )
                 var bomlbl = viewWithTag(i) as? UILabel
                 if bomlbl == nil {
-                    bomlbl = UILabel.init(title: "\(i+1)", fontSize: 14, color: WHITE_COLOR, screenInset: 10)
+                    bomlbl = UILabel.init(title: "\(i+1)", fontSize: 16, color: WHITE_COLOR, screenInset: 10)
                     bomlbl?.tag = i
                     addSubview(bomlbl!)
                     bomlbl!.snp.makeConstraints({ (make) in
@@ -123,7 +123,7 @@ class PunchesView: UIView {
     }
     // MARK: - 懒加载
     private lazy var namelbl:UILabel = {
-        let lbl = UILabel.init(title: "最近7次打卡", fontSize: 14, color: WHITE_COLOR, screenInset: 10)
+        let lbl = UILabel.init(title: "最近7次打卡", fontSize: 16, color: WHITE_COLOR, screenInset: 10)
         
         return lbl
     }()
@@ -137,7 +137,7 @@ class PunchesView: UIView {
     }()
     private lazy var currentlbl = UILabel.init()
     private lazy var bottomlbl:UILabel = {
-        let lbl = UILabel.init(title: "1", fontSize: 14, color: WHITE_COLOR, screenInset: 10)
+        let lbl = UILabel.init(title: "1", fontSize: 16, color: WHITE_COLOR, screenInset: 10)
         lbl.tag = 0
         
         return lbl
